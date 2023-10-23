@@ -10,8 +10,8 @@ public class InputHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var h = Input.GetAxis("Horizontal");
-        var v = Input.GetAxis("Vertical");
+        var h = SimpleInput.GetAxis("Horizontal");
+        var v = SimpleInput.GetAxis("Vertical");
         InputVector = new Vector2(h, v);
 
         MousePosition = Input.mousePosition;
